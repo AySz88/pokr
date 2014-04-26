@@ -15,7 +15,7 @@ DATA_DIR = os.path.abspath(os.path.dirname(__file__))
 
 ffi = FFI()
 ffi.cdef(open(DATA_DIR + '/accel.h').read())
-C = ffi.dlopen(os.path.abspath(os.path.dirname(__file__)) + '/accel.so')
+C = ffi.dlopen(os.path.abspath(os.path.dirname(__file__)) + '/accel.dll')
 
 
 class ScreenExtractor(object):
